@@ -13,7 +13,7 @@ This repository contains **partial demonstration code** for the watermarking and
 | `RepeatCode.py`            | Simplified version of a repetition-based error-tolerant encoding scheme.        |
 | `corpus_processor.py`      | Code to generate a probability-aware bigram table from a large corpus.          |
 | `wiki_bigram_table.pkl`    | Precomputed probability-aware bigram table based on a Wikipedia dump.           |
-| `experiments.py`        | Corpus-level evaluation script for testing watermark performance on the C4 dataset.     |
+| `experiments.py` | Simplified corpus-level evaluation script for validating watermark behavior on C4 samples. |
 
 ## ⚠️ Notice
 
