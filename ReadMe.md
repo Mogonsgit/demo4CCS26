@@ -80,9 +80,9 @@ python corpus_processor.py
 
 ## 📌 Disclaimer
 
-These scripts are shared for academic transparency and demonstration only. Unauthorized commercial use or distribution of the full methods is not permitted until the official release.
-
-For questions, feel free to contact us.
+These scripts are released solely for academic review and transparency purposes.
+They represent a reduced demonstration of the core ideas proposed in the paper and are not intended for production use or large-scale deployment.
+The complete implementation will be released after formal publication to mitigate potential misuse of watermarking mechanisms prior to peer-reviewed dissemination.
 
 ---
 
