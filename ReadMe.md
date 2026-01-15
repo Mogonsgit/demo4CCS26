@@ -51,7 +51,7 @@ This will:
 
 ```bash
 python test_hidden.py
-
+```
 
 This will:
 - Embed a short hidden string into generated text
