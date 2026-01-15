@@ -13,6 +13,7 @@ This repository contains **partial demonstration code** for the watermarking and
 | `RepeatCode.py`            | Simplified version of a repetition-based error-tolerant encoding scheme.        |
 | `corpus_processor.py`      | Code to generate a probability-aware bigram table from a large corpus.          |
 | `wiki_bigram_table.pkl`    | Precomputed probability-aware bigram table based on a Wikipedia dump.           |
+| `experiments.py`        | Corpus-level evaluation script for testing watermark performance on the C4 dataset.     |
 
 ## ⚠️ Notice
 
@@ -50,11 +51,22 @@ This will:
 
 ```bash
 python test_hidden.py
-```
+
 
 This will:
 - Embed a short hidden string into generated text
 - Detect and extract the embedded hidden message
+
+### 4. Run C4 Corpus-Level Experiments
+```bash
+python experiments.py
+```
+The experiments.py script enables corpus-level evaluation on the C4 (Colossal Clean Crawled Corpus) and is intended for large-scale, realistic benchmarking of watermark behavior. In a typical run, the script performs the following steps:
+
+- Loads a subset of the C4 dataset using the HuggingFace datasets library
+- Samples raw text segments as generation prompts
+- Generates continuations with and without watermarking under identical decoding settings
+- Applies the watermark detector to each generated sample
 
 ## 📂 File Dependencies
 
